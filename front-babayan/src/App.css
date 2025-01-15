@@ -1,0 +1,10 @@
+#root {
+  text-align: center;
+}
+
+.appContainer {
+  display: flex;
+  flex-direction: column;
+  height: 90vh;
+overflow:hidden;
+}
