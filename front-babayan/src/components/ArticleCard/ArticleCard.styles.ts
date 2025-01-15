@@ -43,6 +43,7 @@ export const useStyles = createUseStyles(
       fontWeight: 700,
       fontSize: '0.8125rem',
       color: '#EB0028',
+      margin: [5, 0],
     },
     flex: {
       display: 'flex',
