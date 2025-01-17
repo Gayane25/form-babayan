@@ -12,7 +12,11 @@ export const useStyles = createUseStyles(
         display: 'none',
       },
     },
-    [`@media (max-width: 768px)`]: {},
+    [`@media (max-width: 768px)`]: {
+      buttonStyle: {
+        display: 'block',
+      },
+    },
   },
   { name: 'BurgerMenu' }
 );

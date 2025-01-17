@@ -22,7 +22,11 @@ const Dropdown: FC<DropdownProps> = ({ displayName, nestedOpt }) => {
       document.removeEventListener('mousedown', handleClickOutside);
     };
   }, []);
-  const toggleDropdown = () => {
+
+  const toggleDropdown = (event: MouseEvent) => {
+    if (nestedOpt.length > 0 && event.target instanceof HTMLElement) {
+      event.stopPropagation();
+    }
     setIsOpen(!isOpen);
   };
   return (

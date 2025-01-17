@@ -31,7 +31,7 @@ const ArticlesContainer: FC<ArticlesContainerProps> = ({ data }) => {
         <Modal onClose={closeModal}>
           <div className={classes.modalContainer}>
             <h2>{selectedCard?.title}</h2>
-            <div>
+            <div className={classes.selectedImg}>
               <img src={selectedCard?.img_2x} alt="bigger pic" />
             </div>
             <p>{selectedCard?.text}</p>

@@ -27,7 +27,17 @@ const SearchBar = () => {
   };
 
   return (
-    <div className={classes.root}>
+    <>
+      {/* <div className={classes.root}> */}
+      <button
+        className={classes.buttonStyle}
+        onClick={() => {
+          setTextInputOpen(!textInputOpen);
+        }}
+      >
+        {' '}
+        <SearchIcon />
+      </button>
       <div className={textInputOpen ? classes.inputContainer : classes.opacity}>
         <input
           type="text"
@@ -37,15 +47,9 @@ const SearchBar = () => {
           onChange={(e) => handleChange(e.target.value)}
         />
       </div>
-      <button
-        className={classes.buttonStyle}
-        onClick={() => {
-          setTextInputOpen(!textInputOpen);
-        }}
-      >
-        <SearchIcon />
-      </button>
-    </div>
+
+      {/* // </div> */}
+    </>
   );
 };
 

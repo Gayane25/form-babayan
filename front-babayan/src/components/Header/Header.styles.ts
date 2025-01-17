@@ -15,13 +15,26 @@ export const useStyles = createUseStyles(
       maxWidth: 1280,
       alignItems: 'center',
       width: '100%',
-      justifyContent: 'center',
       margin: [0, 'auto', 16],
+      justifyContent: 'flex-end',
+      paddingRight: 50,
     },
     buttonStyle: {
       background: 'none',
       outline: 'none',
       border: 'none',
+    },
+    [`@media (max-width: 1024px)`]: {
+      flex: {
+        flexDirection: 'row',
+        flexWrap: 'wrap',
+        alignItems: 'center',
+        marginBottom: [0, 5, 8],
+        justifyContent: 'space-between',
+      },
+      root: {
+        padding: '0 10px',
+      },
     },
   },
   { name: 'Header' }

@@ -9,6 +9,14 @@ export const useStyles = createUseStyles(
       justifyContent: 'center',
       marginLeft: 150,
     },
+    [`@media (max-width: 1024px)`]: {
+      root: {
+        margin: 0,
+        flexGrow: 'unset',
+        marginLeft: 0,
+        justifyContent: 'none',
+      },
+    },
   },
   { name: 'Logo' }
 );

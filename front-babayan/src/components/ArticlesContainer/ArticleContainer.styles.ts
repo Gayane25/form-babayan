@@ -23,6 +23,13 @@ export const useStyles = createUseStyles(
         maxWidth: 500,
       },
     },
+    selectedImg: {
+      width: '100%',
+      height: '100%',
+      '& img': {
+        width: '100%',
+      },
+    },
   },
   { name: 'ArticlesContainer' }
 );

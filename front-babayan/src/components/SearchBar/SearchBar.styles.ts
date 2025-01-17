@@ -5,6 +5,7 @@ export const useStyles = createUseStyles(
     root: {
       display: 'flex',
       justifyContent: 'flex-end',
+      height: 45,
     },
     buttonStyle: {
       background: 'none',
@@ -13,7 +14,7 @@ export const useStyles = createUseStyles(
     },
     inputContainer: {
       width: '100%',
-      maxWidth: 400,
+      maxWidth: 250,
       display: 'flex',
       flexDirection: 'column',
       alignItems: 'center',
@@ -31,7 +32,18 @@ export const useStyles = createUseStyles(
       transition: 'border-color 0.3s, box-shadow 0.3s',
     },
     opacity: {
-      opacity: '0',
+      display: 'none',
+    },
+    [`@media (max-width: 1024px)`]: {
+      root: {
+        justifyContent: 'flex-start',
+      },
+      inputContainer: {
+        flex: 1,
+        minWidth: '96vw',
+        marginTop: 20,
+        justifyContent: 'center',
+      },
     },
   },
   { name: 'SearchBar' }

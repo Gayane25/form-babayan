@@ -24,12 +24,26 @@ export const useStyles = createUseStyles(
     },
     closeButton: {
       position: 'absolute',
-      top: '1rem',
-      right: '1rem',
+      top: 4,
+      right: 0,
       background: 'none',
       border: 'none',
       fontSize: '1.5rem',
       cursor: 'pointer',
+    },
+    [`@media (max-width: 600px)`]: {
+      modalContent: {
+        padding: '1rem',
+        width: '90%',
+        maxWidth: '100%',
+      },
+    },
+    [`@media (min-width: 601px)`]: {
+      modalContent: {
+        padding: '1rem',
+        width: '50%',
+        maxWidth: '100%',
+      },
     },
   },
   { name: 'Modal' }
